@@ -1,15 +1,11 @@
 import React from 'react'
 import RemyCard from './RemyCard'
 
-export default function Kennel({ kennel }) {
+export default function Kennel(props) {
 
     const renderRemy = () => {
-        return kennel.map(remy => {
-            return <RemyCard 
-            kennel={kennel}
-        />
-        })
-    }
+        return <RemyCard kennel={props.kennel} />;
+    };
 
     return (
         <div>
