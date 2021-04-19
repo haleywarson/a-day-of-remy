@@ -1,0 +1,14 @@
+{ 
+    "remys": [
+        {
+            "id": 1,
+            "name": "Remy-on-rug",
+            "image": "src/Assets/Remy.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Baby-remy",
+            "image": "src/Assets/Remus.jpg"
+        }
+    ]
+}
