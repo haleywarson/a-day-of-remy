@@ -1,10 +1,10 @@
 import './App.css';
-
 import React, { Component } from 'react'
+import MainContainer from './Components/MainContainer';
 
 export default class App extends Component {
 
- state = {
+  state = {
     kennel: [], 
     dogBed: [],
     kitchen: []
@@ -23,9 +23,11 @@ export default class App extends Component {
     return (
       <div className="App">
         <h2>Remy's House</h2>
-        {/* <kennel />
-        <dogBed />
-        <kitchen /> */}
+        <MainContainer 
+          kennel={ this.state.kennel } 
+          dogBed={ this.state.dogBed }
+          kitchen={ this.state.kitchen }
+        />
       </div>
     )
   }
