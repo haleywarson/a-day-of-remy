@@ -4,10 +4,18 @@ import RemyCard from './RemyCard'
 export default function DogBed(props) {
 
     const renderRemy = () => {
-            return <RemyCard 
-                        dogBed={props.dogBed} 
-                        remys={props.remys} 
-                        napRemy={props.napRemy} />;
+        let remyInDogBed = props.dogBed.length !== 0;
+        if(remyInDogBed) {
+            return (
+              <RemyCard
+                kitchen={props.kitchen}
+                remys={props.remys}
+                feedRemy={props.feedRemy}
+                napRemy={props.napRemy}
+                kennelRemy={props.kennelRemy}
+              />
+            );
+            }
         };
     
     return (

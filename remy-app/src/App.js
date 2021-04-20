@@ -18,24 +18,32 @@ export default class App extends Component {
         remys: remys[0],
         kennel: remys[0]
       })
-      );
+      ) 
+      
   }
 
   feedRemy = (remy) => {
+    // if this.state.kennel.length <== 1, then const new kennel === empty array, else run filter and take out remy that was clicked
     this.setState({
-      kitchen: [...this.state.kitchen, remy]
+      kitchen: [...this.state.kitchen, remy],
+      dogBed: [],
+      kennel: []
     })
   }
 
   napRemy = (remy) => {
     this.setState({
-      dogBed: [...this.state.dogBed, remy]
+      dogBed: [...this.state.dogBed, remy],
+      kitchen: [],
+      kennel: []
     });
   }
 
   kennelRemy = (remy) => {
     this.setState({
-      kennel: [...this.state.kennel, remy]
+      kennel: [...this.state.kennel, remy],
+      kitchen: [],
+      dogBed: []
     });
   }
 
