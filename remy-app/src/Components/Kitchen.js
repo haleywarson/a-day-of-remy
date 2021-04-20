@@ -11,6 +11,7 @@ export default function Kitchen(props) {
     return (
         <div className="kitchen">
             { renderCard() }
+            <h2>Kitchen</h2>
         </div>
     )
 }
