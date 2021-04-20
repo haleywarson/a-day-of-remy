@@ -1,28 +1,34 @@
 
+/* || Main Page */
+
 .main-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem;
-}
-
-
-.remy-card {
-    display: flex;
-    flex-direction: column; 
     justify-content: space-between;
-    margin: 1rem;
-    padding: 1rem;
-    box-shadow: 2px 2px 3px rgba(192, 192, 192, 0.21)
+    padding: 2rem;
 }
 
 .kitchen, .kennel, .dog-bed, .dog-park {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
+    align-items: center;
+    width: 20%;
     margin: 1rem;
     padding: 1rem;
     box-shadow: 2px 2px 3px rgba(95, 93, 93, 0.582)
 }
+
+.remy-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 70%;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 3px rgba(192, 192, 192, 0.21)
+}
+
+/* || Header and Navigation */
 
 header {
     height: 5rem;
@@ -33,13 +39,44 @@ header h1 {
     padding: 2rem;
 }
 
+.navigation a.icon { /* (more about remy menu) */
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1rem;
+}
+
+.navigation a { /* (more about remy links menu) */
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    text-align: right;
+    list-style-type: none;
+    right: 1rem;
+    position: relative;
+}
+
+#logo {
+    display: inline;
+    position: relative;
+    left: 1rem;
+}
+
+/* || Footer */
+
 footer {
-    height: 1rem;
+    height: 3rem;
     box-shadow: 0px -2px 3px gray;
+    text-align: center;
+    background: grey;
 }
 
 footer p {
-    padding: 2rem;
-}
-
+    padding: 1rem;
+    font-size: 1rem;
+    color: black;
+} 
 

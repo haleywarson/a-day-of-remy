@@ -1,7 +1,7 @@
 import React from 'react'
 import RemyCard from './RemyCard'
 
-export default function DogBed(props) {
+export default function DogPark(props) {
 
     const renderRemy = () => {
         let remyInDogPark = props.dogPark.length !== 0;
