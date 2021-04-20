@@ -21,21 +21,21 @@ export default class App extends Component {
       );
   }
 
-  feedRemy = (remys) => {
+  feedRemy = (remy) => {
     this.setState({
-      kitchen: [...this.state.kitchen, remys]
+      kitchen: [...this.state.kitchen, remy]
     })
   }
 
-  napRemy = (remys) => {
+  napRemy = (remy) => {
     this.setState({
-      dogBed: [...this.state.dogBed, remys]
+      dogBed: [...this.state.dogBed, remy]
     });
   }
 
-  kennelRemy = (remys) => {
+  kennelRemy = (remy) => {
     this.setState({
-      kennel: [...this.state.kennel, remys]
+      kennel: [...this.state.kennel, remy]
     });
   }
 

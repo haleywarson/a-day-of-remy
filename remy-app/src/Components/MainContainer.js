@@ -7,7 +7,7 @@ import DogBed from './DogBed'
 export default function MainContainer(props) {
 
     const renderRemyLocation = () => {
-        let remyInKitchen = props.kitchen.length !== 0
+        let remyInKitchen = props.kitchen.length !== 0;
         let remyInDogBed = props.dogBed.length !== 0;
         let remyInKennel = props.kennel.length !== 0;
 
