@@ -16,7 +16,7 @@ export default class App extends Component {
       .then((response) => response.json())
       .then((remys) => this.setState({
         remys: remys[0],
-        kitchen: remys[0]
+        kennel: remys[0]
       })
       );
   }
