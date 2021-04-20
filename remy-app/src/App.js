@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./App.css";
+import "./index.css"
 import MainContainer from './Components/MainContainer';
 
 export default class App extends Component {
@@ -8,7 +9,8 @@ export default class App extends Component {
     remys: [],
     kennel: [], 
     dogBed: [],
-    kitchen: []
+    kitchen: [],
+    dogPark: []
   }
 
   componentDidMount() {
@@ -26,7 +28,8 @@ export default class App extends Component {
     this.setState({
       kitchen: [...this.state.kitchen, remy],
       dogBed: [],
-      kennel: []
+      kennel: [],
+      dogPark: []
     })
   }
 
@@ -34,7 +37,8 @@ export default class App extends Component {
     this.setState({
       dogBed: [...this.state.dogBed, remy],
       kitchen: [],
-      kennel: []
+      kennel: [],
+      dogPark: [],
     });
   }
 
@@ -42,23 +46,40 @@ export default class App extends Component {
     this.setState({
       kennel: [...this.state.kennel, remy],
       kitchen: [],
-      dogBed: []
+      dogBed: [],
+      dogPark: []
+    });
+  }
+
+  parkRemy = (remy) => {
+    this.setState({
+      dogPark: [...this.state.dogPark, remy],
+      kitchen: [],
+      dogBed: [],
+      kennel: []
     });
   }
 
   render() {
     return (
       <div className="App">
-        <h1>Remy's House</h1>
+        <header>
+          <h1> Remy's House</h1>
+        </header>
         <MainContainer 
           kennel={ this.state.kennel } 
           dogBed={ this.state.dogBed }
           kitchen={ this.state.kitchen }
+          dogPark={ this.state.dogPark }
           remys={ this.state.remys }
           feedRemy={ this.feedRemy }
           napRemy={ this.napRemy }
           kennelRemy={ this.kennelRemy }
+          parkRemy={ this.parkRemy }
         />
+        <footer>
+          <p>Created By: Haley and Eric </p>
+        </footer>
       </div>
     )
   }

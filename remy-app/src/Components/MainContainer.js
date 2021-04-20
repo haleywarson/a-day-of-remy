@@ -1,12 +1,13 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import Kennel from './Kennel'
 import Kitchen from './Kitchen'
 import DogBed from './DogBed'
+import DogPark from './DogPark'
 
 export default function MainContainer(props) {
 
     return (
+
       <div className="main-container">
         <Kitchen
           kitchen={props.kitchen}
@@ -14,6 +15,7 @@ export default function MainContainer(props) {
           feedRemy={props.feedRemy}
           napRemy={props.napRemy}
           kennelRemy={props.kennelRemy}
+          parkRemy={props.parkRemy}
         />
         <DogBed
           dogBed={props.dogBed}
@@ -21,6 +23,7 @@ export default function MainContainer(props) {
           feedRemy={props.feedRemy}
           napRemy={props.napRemy}
           kennelRemy={props.kennelRemy}
+          parkRemy={props.parkRemy}
         />
         <Kennel
           kennel={props.kennel}
@@ -28,7 +31,17 @@ export default function MainContainer(props) {
           feedRemy={props.feedRemy}
           napRemy={props.napRemy}
           kennelRemy={props.kennelRemy}
+          parkRemy={props.parkRemy}
         />
-      </div>
+        <DogPark
+                dogPark={props.dogPark}
+                remys={props.remys}
+                parkRemy={props.parkRemy}
+                feedRemy={props.feedRemy}
+          napRemy={props.napRemy}
+          kennelRemy={props.kennelRemy}
+          parkRemy={props.parkRemy}
+            />
+    </div>
     );
 }
