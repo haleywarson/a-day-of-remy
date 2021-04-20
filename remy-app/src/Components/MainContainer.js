@@ -10,37 +10,37 @@ export default function MainContainer(props) {
 
       <div className="main-container">
         <Kitchen
-          kitchen={props.kitchen}
-          remys={props.remys}
-          feedRemy={props.feedRemy}
-          napRemy={props.napRemy}
-          kennelRemy={props.kennelRemy}
-          parkRemy={props.parkRemy}
+            kitchen={props.kitchen}
+            remys={props.remys}
+            feedRemy={props.feedRemy}
+            napRemy={props.napRemy}
+            kennelRemy={props.kennelRemy}
+            parkRemy={props.parkRemy}
         />
         <DogBed
-          dogBed={props.dogBed}
-          remys={props.remys}
-          feedRemy={props.feedRemy}
-          napRemy={props.napRemy}
-          kennelRemy={props.kennelRemy}
-          parkRemy={props.parkRemy}
+            dogBed={props.dogBed}
+            remys={props.remys}
+            feedRemy={props.feedRemy}
+            napRemy={props.napRemy}
+            kennelRemy={props.kennelRemy}
+            parkRemy={props.parkRemy}
         />
         <Kennel
-          kennel={props.kennel}
-          remys={props.remys}
-          feedRemy={props.feedRemy}
-          napRemy={props.napRemy}
-          kennelRemy={props.kennelRemy}
-          parkRemy={props.parkRemy}
+            kennel={props.kennel}
+            remys={props.remys}
+            feedRemy={props.feedRemy}
+            napRemy={props.napRemy}
+            kennelRemy={props.kennelRemy}
+            parkRemy={props.parkRemy}
         />
         <DogPark
-                dogPark={props.dogPark}
-                remys={props.remys}
-                parkRemy={props.parkRemy}
-                feedRemy={props.feedRemy}
-          napRemy={props.napRemy}
-          kennelRemy={props.kennelRemy}
-          parkRemy={props.parkRemy}
+            dogPark={props.dogPark}
+            remys={props.remys}
+            parkRemy={props.parkRemy}
+            feedRemy={props.feedRemy}
+            napRemy={props.napRemy}
+            kennelRemy={props.kennelRemy}
+            parkRemy={props.parkRemy}
             />
     </div>
     );
