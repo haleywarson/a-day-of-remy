@@ -19,7 +19,6 @@ export default class App extends Component {
         kennel: remys[0]
       })
       ) 
-      
   }
 
   feedRemy = (remy) => {
