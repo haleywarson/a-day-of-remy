@@ -28,7 +28,8 @@ export default class App extends Component {
     this.setState({
       kitchen: [...this.state.kitchen, remy],
       dogBed: [],
-      kennel: []
+      kennel: [],
+      dogPark: []
     })
   }
 
@@ -36,7 +37,8 @@ export default class App extends Component {
     this.setState({
       dogBed: [...this.state.dogBed, remy],
       kitchen: [],
-      kennel: []
+      kennel: [],
+      dogPark: [],
     });
   }
 
@@ -44,13 +46,17 @@ export default class App extends Component {
     this.setState({
       kennel: [...this.state.kennel, remy],
       kitchen: [],
-      dogBed: []
+      dogBed: [],
+      dogPark: []
     });
   }
 
   parkRemy = (remy) => {
     this.setState({
-      dogPark: [...this.state.dogPark, remy]
+      dogPark: [...this.state.dogPark, remy],
+      kitchen: [],
+      dogBed: [],
+      kennel: []
     });
   }
 
