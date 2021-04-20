@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "./App.css";
 import "./index.css"
 import MainContainer from './Components/MainContainer';
+// import CloudContainer from './Components/CloudContainer'
 
 export default class App extends Component {
 
@@ -63,9 +64,6 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <h1> Remy's House</h1>
-        </header>
         <MainContainer 
           kennel={ this.state.kennel } 
           dogBed={ this.state.dogBed }
@@ -76,11 +74,8 @@ export default class App extends Component {
           napRemy={ this.napRemy }
           kennelRemy={ this.kennelRemy }
           parkRemy={ this.parkRemy }
-        />
-        <footer>
-          <p>Created By: Haley and Eric </p>
-        </footer>
-      </div>
+          />
+    </div>    
     )
   }
 }
