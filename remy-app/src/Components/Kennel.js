@@ -6,14 +6,15 @@ export default function Kennel(props) {
     const renderRemy = () =>  {
         let remyInKennel = props.kennel.length !== 0;
         if(remyInKennel) {
-            return <RemyCard
-                    kennel={props.kennel}
+            return (
+                <RemyCard
+                    kitchen={props.kitchen}
                     remys={props.remys}
-                    kennelRemy={props.kennelRemy} 
-                    napRemy={props.napRemy} 
-                    parkRemy={props.parkRemy}
                     feedRemy={props.feedRemy}
-                />;
+                    napRemy={props.napRemy}
+                    kennelRemy={props.kennelRemy}
+                />
+            );
         }
     }
     return (

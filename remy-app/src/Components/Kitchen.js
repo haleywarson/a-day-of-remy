@@ -6,14 +6,13 @@ export default function Kitchen(props) {
     const renderRemy = () => {
         let remyInKitchen = props.kitchen.length !== 0;
         if(remyInKitchen) {
-            return <RemyCard
-                        kitchen={props.kitchen}
-                        remys={props.remys}
+            return <RemyCard 
+                        kitchen={props.kitchen} 
+                        remys={props.remys} 
                         feedRemy={props.feedRemy} 
-                        napRemy={props.napRemy} 
-                        parkRemy={props.parkRemy}
+                        napRemy={props.napRemy}
                         kennelRemy={props.kennelRemy}
-                    />;
+                        />;
             }
     }
 

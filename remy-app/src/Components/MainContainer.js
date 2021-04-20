@@ -7,27 +7,32 @@ import DogPark from './DogPark'
 export default function MainContainer(props) {
 
     return (
-        <div className="main-container">
-            <Kitchen
-                kitchen={props.kitchen}
-                remys={props.remys}
-                feedRemy={props.feedRemy}
-            />
-            <DogBed
-                dogBed={props.dogBed}
-                remys={props.remys}
-                napRemy={props.napRemy}
-            />
-            <Kennel
-                kennel={props.kennel}
-                remys={props.remys}
-                kennelRemy={props.kennelRemy}
-            />
-            <DogPark
-                dogPark={props.dogPark}
-                remys={props.remys}
-                parkRemy={props.parkRemy}
-            />
-        </div>
+    <div className="main-container">
+        <Kitchen
+        kitchen={props.kitchen}
+        remys={props.remys}
+        feedRemy={props.feedRemy}
+        napRemy={props.napRemy}
+        kennelRemy={props.kennelRemy}
+        dogPark={props.dogPark}
+        />
+        <DogBed
+        dogBed={props.dogBed}
+        remys={props.remys}
+        feedRemy={props.feedRemy}
+        napRemy={props.napRemy}
+        kennelRemy={props.kennelRemy}
+        dogPark={props.dogPark}
+
+        />
+        <Kennel
+        kennel={props.kennel}
+        remys={props.remys}
+        feedRemy={props.feedRemy}
+        napRemy={props.napRemy}
+        kennelRemy={props.kennelRemy}
+        dogPark={props.dogPark}
+        />
+    </div>
     );
 }
