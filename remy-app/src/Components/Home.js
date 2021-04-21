@@ -121,26 +121,6 @@ export default class App extends Component {
                 parkRemy={this.parkRemy}
               />
             </main>
-            <footer>
-              <p>
-                Created By:{" "}
-                <a
-                  href="https://github.com/haleywarson"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Haley
-                </a>{" "}
-                and{" "}
-                <a
-                  href="https://github.com/Kwayzaar"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Eric
-                </a>
-              </p>
-            </footer>
           </div>
         );
   }
