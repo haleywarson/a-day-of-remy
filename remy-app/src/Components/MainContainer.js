@@ -19,6 +19,8 @@ export default function MainContainer(props) {
                 napRemy={props.napRemy}
                 kennelRemy={props.kennelRemy}
                 parkRemy={props.parkRemy}
+                giveTreats={props.giveTreats}
+                treatCount={props.treatCount}
             />
             <DogBed
                 dogBed={props.dogBed}

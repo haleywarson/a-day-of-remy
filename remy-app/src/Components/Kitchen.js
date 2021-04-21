@@ -10,16 +10,21 @@ export default function Kitchen(props) {
     const renderRemy = () => {
         let remyInKitchen = props.kitchen.length !== 0;
         if(remyInKitchen) {
-
-            return <RemyCard
+                return (
+                <>
+                    <RemyCard
                         kitchen={props.kitchen}
                         remys={props.remys}
-                        feedRemy={props.feedRemy} 
-                        napRemy={props.napRemy} 
+                        feedRemy={props.feedRemy}
+                        napRemy={props.napRemy}
                         parkRemy={props.parkRemy}
                         kennelRemy={props.kennelRemy}
-                    />;
-            }
+                    />
+                    <button onClick={props.giveTreats}>Feed me</button>
+                    <p>{props.treatCount} treats</p>
+                </>
+                );
+        }
     }
 
     return (
@@ -27,5 +32,5 @@ export default function Kitchen(props) {
             <h2>Kitchen</h2>
             { renderRemy() }
         </div>
-    )
+    );
 }

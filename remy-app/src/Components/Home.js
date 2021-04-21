@@ -13,6 +13,7 @@ export default class App extends Component {
     dogBed: [],
     kitchen: [],
     dogPark: [],
+    treatCount: 0
   };
 
   componentDidMount() {
@@ -63,6 +64,12 @@ export default class App extends Component {
     });
   };
 
+  giveTreats = () => {
+    this.setState({
+      treatCount: this.state.treatCount + 1
+    });
+  }
+
   render() {
         return (
           <div className="App">
@@ -78,6 +85,8 @@ export default class App extends Component {
                 napRemy={this.napRemy}
                 kennelRemy={this.kennelRemy}
                 parkRemy={this.parkRemy}
+                giveTreats={this.giveTreats}
+                treatCount={this.state.treatCount}
               />
             </main>
             <footer>
