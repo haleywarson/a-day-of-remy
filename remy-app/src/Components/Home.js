@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import "../App.css";
 import "../index.css";
 
-import MainContainer from "./MainContainer";
+// import MainContainer from "./MainContainer";
+import CloudContainer from './Clouds'
 
 export default class App extends Component {
 
@@ -68,7 +69,7 @@ export default class App extends Component {
           <div className="App">
             <header></header>
             <main>
-              <MainContainer
+              <CloudContainer
                 kennel={this.state.kennel}
                 dogBed={this.state.dogBed}
                 kitchen={this.state.kitchen}

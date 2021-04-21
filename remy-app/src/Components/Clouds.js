@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MainContainer from './Components/MainContainer';
+import MainContainer from './MainContainer';
 
 
 export default class Clouds extends Component {
@@ -22,7 +22,18 @@ export default class Clouds extends Component {
                     <div class="x5">
                         <div class="cloud"></div>
                     </div>
-            </div>
+                </div>
+                <MainContainer
+                    kennel={props.kennel}
+                    dogBed={this.state.dogBed}
+                    kitchen={this.state.kitchen}
+                    dogPark={this.state.dogPark}
+                    remys={this.state.remys}
+                    feedRemy={this.feedRemy}
+                    napRemy={this.napRemy}
+                    kennelRemy={this.kennelRemy}
+                    parkRemy={this.parkRemy}
+                />
             </div>
         )
     }
