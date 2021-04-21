@@ -1,5 +1,7 @@
 
-.main-container {
+/* || Main Page */
+
+.main-container, .friend-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -9,7 +11,6 @@
 .kitchen, .kennel, .dog-bed, .dog-park {
     display: flex;
     flex-direction: column; 
-    /* justify-content: center; */
     align-items: center;
     width: 20%;
     margin: 1rem;
@@ -17,37 +18,41 @@
     box-shadow: 2px 2px 3px rgba(95, 93, 93, 0.582)
 }
 
-/* .kitchen {
-    backgroun-image: 
-} */
-
-.remy-card {
+.remy-card, .friend-card {
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     margin: 1rem;
     padding: 1rem;
     box-shadow: 2px 2px 3px rgba(192, 192, 192, 0.21)
 }
 
+/* || Header and Navigation */
 
-header {
+.nav {
     height: 5rem;
     box-shadow: 0px 2px 3px gray;
 }
 
-header h1 {
-    padding: 2rem;
+.nav li {
+    padding: .5rem;
+    display: inline-block;
 }
 
+/* || Footer */
+
 footer {
-    height: 1rem;
+    height: 3rem;
     box-shadow: 0px -2px 3px gray;
+    text-align: center;
+    background: grey;
 }
 
 footer p {
-    padding: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: black;
 }
 
 /* Cloud Animations! */
@@ -127,4 +132,5 @@ body {
     right: 50px;
     top: -90px;
 }
+
 
