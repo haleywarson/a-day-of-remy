@@ -9,7 +9,7 @@ export default function MainContainer(props) {
     return (
 
     <div className="main-container">
-        <header>
+        <header className="header">
             <h1> Remy's House</h1>
         </header>
         <Kitchen
@@ -45,9 +45,9 @@ export default function MainContainer(props) {
             kennelRemy={props.kennelRemy}
             parkRemy={props.parkRemy}
             />
-        {/* <footer>
+        <footer className="footer">
             <p>Created By: Haley and Eric </p>
-        </footer> */}
+        </footer>
 
     </div>
     );

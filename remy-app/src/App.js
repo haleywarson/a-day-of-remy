@@ -64,7 +64,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <MainContainer 
+        <CloudContainer
           kennel={ this.state.kennel } 
           dogBed={ this.state.dogBed }
           kitchen={ this.state.kitchen }

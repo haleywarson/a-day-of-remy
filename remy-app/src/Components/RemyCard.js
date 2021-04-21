@@ -6,6 +6,9 @@ export default function RemyCard({name, remys, feedRemy, napRemy, kennelRemy, pa
     return (
         <div className="remy-card">
             <img alt={name} src={RemyPic} />
+            <dvi class="text-box">
+                <a href="#" class="btn btn-white btn-animate">click me</a>
+            </dvi>
             <button onClick={() => feedRemy(remys)}>Feed me</button>
             <button onClick={() => napRemy(remys)}>Nap time</button>
             <button onClick={() => kennelRemy(remys)}>Kennel time</button>
