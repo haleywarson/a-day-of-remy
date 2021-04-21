@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import "./App.css";
 import "./index.css"
-import MainContainer from './Components/MainContainer';
-// import CloudContainer from './Components/CloudContainer'
+// import MainContainer from './Components/MainContainer';
+import CloudContainer from './Components/Clouds'
 
 export default class App extends Component {
 
