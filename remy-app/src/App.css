@@ -143,15 +143,16 @@ body {
 }
 
 /* Button Animations! */
+
 /* body {
     font-family: sans-serif;
     background-color: #81d4fa;
     font-weight: bold;
 } */
 
-.text-box {
+/* .text-box {
     margin-left: 44vw;
-	 margin-top: 42vh;
+	margin-top: 42vh;
 }
 
 .btn:link,
@@ -202,7 +203,7 @@ body {
     opacity: 0;
 }
 
-.btn-animated {
+.btn-animated 
     animation: moveInBottom 5s ease-out;
     animation-fill-mode: backwards;
 }
@@ -217,5 +218,5 @@ body {
         opacity: 1;
         transform: translateY(0px);
     }
-}
+} */
 
