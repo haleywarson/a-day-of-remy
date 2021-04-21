@@ -1,5 +1,9 @@
 import React from 'react'
-import RemyCard from './RemyCard'
+
+import "../App.css";
+import "../index.css";
+
+import RemyCard from "./RemyCard";
 
 export default function DogBed(props) {
 

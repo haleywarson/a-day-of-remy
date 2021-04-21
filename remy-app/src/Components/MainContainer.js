@@ -1,5 +1,8 @@
 import React from 'react'
 
+import "../App.css";
+import "../index.css";
+
 import Kennel from './Kennel'
 import Kitchen from './Kitchen'
 import DogBed from './DogBed'
@@ -8,7 +11,6 @@ import DogPark from './DogPark'
 export default function MainContainer(props) {
 
     return (
-
         <div className="main-container">
             <Kitchen
                 kitchen={props.kitchen}
@@ -41,7 +43,7 @@ export default function MainContainer(props) {
                 feedRemy={props.feedRemy}
                 napRemy={props.napRemy}
                 kennelRemy={props.kennelRemy}
-                />
+            />
         </div>
         );
 }

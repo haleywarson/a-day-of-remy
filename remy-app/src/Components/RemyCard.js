@@ -1,6 +1,9 @@
 import React from 'react'
-import RemyPic from '../Assets/Remy.jpg'
 
+import "../App.css";
+import "../index.css";
+
+import RemyPic from '../Assets/Remy.jpg'
 
 export default function RemyCard({name, remys, feedRemy, napRemy, kennelRemy, parkRemy}) {
 
