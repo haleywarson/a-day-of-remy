@@ -7,13 +7,15 @@ import "../index.css";
 import CloudContainer from './Clouds'
 
 export default class App extends Component {
-
   state = {
     remys: [],
     kennel: [],
     dogBed: [],
     kitchen: [],
     dogPark: [],
+    treatCount: 0,
+    time: 0,
+    clockId: null,
   };
 
   componentDidMount() {
@@ -25,6 +27,10 @@ export default class App extends Component {
           kennel: remys[0],
         })
       );
+  }
+
+  componentWillUnmount() {
+    this.stopClock();
   }
 
   feedRemy = (remy) => {
@@ -62,6 +68,40 @@ export default class App extends Component {
       dogBed: [],
       kennel: [],
     });
+  };
+
+  giveTreats = () => {
+    this.setState({
+      treatCount: this.state.treatCount + 1,
+    });
+  };
+
+  imFullAlert = () => {
+    if (this.state.treatCount === 5) {
+      alert("I'm full!");
+    }
+  };
+
+  startClock = () => {
+    const clockId = setInterval(() => {
+      this.setState({ time: this.state.time + 1 });
+    }, 1000);
+    this.setState({
+      clockId,
+    });
+  };
+
+  resetTime = () => {
+    this.setState({
+      time: 0,
+    });
+  };
+  
+  stopClock = () => {
+    if (this.state.clockId) {
+      clearInterval(this.state.clockId);
+      this.resetTime();
+    }
   };
 
   render() {
@@ -103,6 +143,5 @@ export default class App extends Component {
             </footer>
           </div>
         );
-    }
-}
-
+  }
+}  

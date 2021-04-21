@@ -10,15 +10,22 @@ export default function DogBed(props) {
     const renderRemy = () => {
         let remyInDogBed = props.dogBed.length !== 0;
         if(remyInDogBed) {
-            return <RemyCard
-                        dogBed={props.dogBed}
-                        remys={props.remys}
-                        napRemy={props.napRemy} 
-                        parkRemy={props.parkRemy}
-                        feedRemy={props.feedRemy}
-                        kennelRemy={props.kennelRemy}
-                    />;
-            }
+            return (
+                <>
+                    <RemyCard
+                    dogBed={props.dogBed}
+                    remys={props.remys}
+                    napRemy={props.napRemy}
+                    parkRemy={props.parkRemy}
+                    feedRemy={props.feedRemy}
+                    kennelRemy={props.kennelRemy}
+                    />
+                    <button onClick={() => props.startClock()}>Goodnight!</button>
+                    <p>{props.time}</p>
+                    <button onClick={() => props.stopClock()}>Wake up!</button>
+                </>
+                );
+                }
         };
 
     return (
