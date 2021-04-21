@@ -24,15 +24,15 @@ export default class Clouds extends Component {
                     </div>
                 </div>
                 <MainContainer
-                    kennel={props.kennel}
-                    dogBed={this.state.dogBed}
-                    kitchen={this.state.kitchen}
-                    dogPark={this.state.dogPark}
-                    remys={this.state.remys}
-                    feedRemy={this.feedRemy}
-                    napRemy={this.napRemy}
-                    kennelRemy={this.kennelRemy}
-                    parkRemy={this.parkRemy}
+                    kennel={ this.props.kennel } 
+                    dogBed={ this.props.dogBed }
+                    kitchen={ this.props.kitchen }
+                    dogPark={ this.props.dogPark }
+                    remys={ this.props.remys }
+                    feedRemy={ this.feedRemy }
+                    napRemy={ this.napRemy }
+                    kennelRemy={ this.kennelRemy }
+                    parkRemy={ this.parkRemy }
                 />
             </div>
         )
