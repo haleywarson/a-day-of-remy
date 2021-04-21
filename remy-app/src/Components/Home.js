@@ -70,6 +70,12 @@ export default class App extends Component {
     });
   }
 
+  // imFullAlert = () => {
+  //   if ({this.state.treatCount} >== 5) {
+  //     alert("I'm full!")
+  //   }
+  // }
+
   render() {
         return (
           <div className="App">
