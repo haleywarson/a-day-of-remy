@@ -106,7 +106,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <header></header>
+        <header>
+        </header>
         <main>
           <MainContainer
             kennel={this.state.kennel}
@@ -135,8 +136,8 @@ export default class App extends Component {
               rel="noreferrer"
             >
               Haley
-            </a>{" "}
-            and{" "}
+            </a>
+            &
             <a
               href="https://github.com/Kwayzaar"
               target="_blank"
