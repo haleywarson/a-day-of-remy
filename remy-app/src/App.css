@@ -1,6 +1,9 @@
 /* || Main Page */
+* {
+    font-family: 'Bangers', cursive;
+}
 
-.main-container, .friend-container, .about, .friends {
+.main-container {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
@@ -28,7 +31,7 @@
     align-items: center;
     background-color: white;
     width: 20%;
-    margin: 1rem;
+    margin: .5rem;
     padding: 1rem;
     box-shadow: 2px 2px 3px rgba(95, 93, 93, 0.582)
 }
@@ -73,6 +76,11 @@ footer {
     box-shadow: 0px -2px 3px gray;
     text-align: center;
     background-image: url('https://www.publicdomainpictures.net/pictures/20000/velka/grass-background.jpg');
+    /* background-image: url('./Assets/grass-background.jpg'); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 footer p, footer a {
