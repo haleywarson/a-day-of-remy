@@ -30,8 +30,11 @@ export default function Kitchen(props) {
 
     return (
         <div className="kitchen">
-            <h2>Kitchen</h2>
-            { renderRemy() }
+            <img
+            alt="Kitchen"
+            src="https://png.pngtree.com/png-vector/20191030/ourmid/pngtree-pet-dog-bowl-icon-cartoon-style-png-image_1910232.jpg"
+            />
+            {renderRemy()}
         </div>
     );
 }

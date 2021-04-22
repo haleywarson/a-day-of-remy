@@ -30,8 +30,11 @@ export default function DogPark(props) {
 
     return (
         <div className="dog-park">
-            <h2>Dog Park</h2>
-            { renderRemy() }
+            <img
+            alt="Dog Park"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv0WNjvSV7VZjZXDeTB08Wvc_oI79idP_3nw&usqp=CAU"
+            />
+            {renderRemy()}
         </div>
-    )
+    );
 }

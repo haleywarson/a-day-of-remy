@@ -24,14 +24,17 @@ export default function DogBed(props) {
                     <p>{props.time}</p>
                     <button onClick={() => props.stopClock()}>Wake up!</button>
                 </>
-                );
+            );
                 }
         };
 
     return (
         <div className="dog-bed">
-            <h2>Dog Bed</h2>
-            { renderRemy() }
+                <img
+                alt="Dog Bed"
+                src="https://lh3.googleusercontent.com/proxy/lQuRhi6I0si3R1pwVqu9k-dc1KTGVnIGOgorYV3XZ4Oq_HOMB_tDursJuaXLn_y1TkTI5kW0dKsX90wFWkFWJf2a"
+                />
+                {renderRemy()}
         </div>
-    )
+    );
 }

@@ -29,6 +29,21 @@
     box-shadow: 2px 2px 3px rgba(95, 93, 93, 0.582)
 }
 
+.dog-bed img {
+    width: 100%;
+}
+
+.kitchen img {
+    width: 100%;
+}
+
+.kennel img {
+    width: 100%;
+}
+
+.dog-park img {
+    width: 100%;
+}
 
 .about-container {
     display: flex;
@@ -104,7 +119,7 @@ h2, p {
 	box-shadow: 0 3px 20px 0 #0000003b;
     font-family: 'Bangers', cursive;
     color: rgb(8, 186, 240);
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 5px;
 }
 .remy-card button:hover {

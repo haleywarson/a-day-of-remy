@@ -22,8 +22,11 @@ export default function Kennel(props) {
     }
     return (
         <div className="kennel">
-            <h2>Kennel</h2>
-            { renderRemy() }
+            <img
+            alt="Kennel"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9AseDiRKogw7tyEINF8-38yNySMzcWHmcBAds0YdNuHDRWKUC7u4NCuTvWRe8yrARDi0&usqp=CAU"
+            />
+            {renderRemy()}
         </div>
     );
 }
