@@ -1,5 +1,3 @@
-# a-day-of-remy
-
 # Remy App
 
 ## Table of Contents
