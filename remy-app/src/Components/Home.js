@@ -5,6 +5,7 @@ import "../index.css";
 
 import MainContainer from "./MainContainer";
 import CloudContainer from './Clouds'
+import Footer from './Footer'
 
 export default class Home extends Component {
   state = {
@@ -130,26 +131,7 @@ export default class Home extends Component {
             time={this.state.time}
           />
         </main>
-        {/* <footer>
-          <p>
-            Created By:
-            <a
-              href="https://github.com/haleywarson"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Haley
-            </a>
-            &
-            <a
-              href="https://github.com/Kwayzaar"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Eric
-            </a>
-          </p>
-        </footer>  */}
+        <Footer />
       </div>
     );
   }

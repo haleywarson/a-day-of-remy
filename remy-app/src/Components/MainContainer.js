@@ -52,7 +52,7 @@ export default function MainContainer(props) {
                         napRemy={props.napRemy}
                         kennelRemy={props.kennelRemy} />
                     </div>
-            <div id="footer">
+            {/* <div id="footer">
                 <footer>
                     <p>
                     Created By:{" "}
@@ -74,7 +74,7 @@ export default function MainContainer(props) {
                     </p>
                 </footer>
                 
-            </div>
+            </div> */}
         </div>
     );
 }
