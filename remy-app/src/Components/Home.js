@@ -54,7 +54,7 @@ export default class App extends Component {
 
   kennelRemy = (remy) => {
     this.setState({
-      kennel: [...this.state.kennel, remy],
+      kennel: [remy],
       kitchen: [],
       dogBed: [],
       dogPark: [],
