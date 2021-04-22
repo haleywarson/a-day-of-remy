@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Clouds extends Component {
     render() {
         return (
-            <div>
+            <div id="cloud-container">
                 <div id="background-wrap">
                     <div className="x1">
                         <div className="cloud"></div>

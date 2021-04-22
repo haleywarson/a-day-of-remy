@@ -130,7 +130,7 @@ export default class Home extends Component {
             time={this.state.time}
           />
         </main>
-        <footer>
+        {/* <footer>
           <p>
             Created By:
             <a
@@ -149,7 +149,7 @@ export default class Home extends Component {
               Eric
             </a>
           </p>
-        </footer>
+        </footer>  */}
       </div>
     );
   }
