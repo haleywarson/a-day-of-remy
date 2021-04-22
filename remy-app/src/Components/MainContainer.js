@@ -24,6 +24,7 @@ export default function MainContainer(props) {
                         giveTreats={props.giveTreats}
                         treatCount={props.treatCount}
                         imFullAlert={props.imFullAlert}
+                        
                         />
                         <DogBed
                         dogBed={props.dogBed}

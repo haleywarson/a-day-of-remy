@@ -22,7 +22,7 @@ export default function Kitchen(props) {
                         />
                         <button onClick={props.giveTreats}>Good boy!</button>
                         <p>{props.treatCount} treats</p>
-                        {props.imFullAlert()}
+                        {/* {props.imFullAlert()} */}
                     </>
                     );
         }

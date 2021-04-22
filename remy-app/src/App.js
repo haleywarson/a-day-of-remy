@@ -11,7 +11,6 @@ import Friends from "./Components/Friends";
 export default function App() {
 
     return (
- 
         <Router>
           <div className="nav">
             <header>
@@ -42,6 +41,5 @@ export default function App() {
             </main>
         </div>
         </Router>
-
     );
 }

@@ -57,6 +57,7 @@
     width: 97%;
     margin: .5rem;
     padding: 1rem;
+    overflow: scroll;
     box-shadow: 3px 3px 4px rgba(95, 93, 93, 0.582)
 }
 
@@ -238,6 +239,8 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 footer p {
