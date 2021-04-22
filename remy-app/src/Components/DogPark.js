@@ -29,12 +29,12 @@ export default function DogPark(props) {
         };
 
     return (
-        <div className="dog-park">
-            <img
-            alt="Dog Park"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv0WNjvSV7VZjZXDeTB08Wvc_oI79idP_3nw&usqp=CAU"
-            />
-            {renderRemy()}
-        </div>
+      <div className="dog-park">
+        <img
+          alt="Dog Park"
+          src="https://image.freepik.com/free-vector/boy-playing-fetch-his-dog-while-using-medical-mask_209620-71.jpg"
+        />
+        {renderRemy()}
+      </div>
     );
 }

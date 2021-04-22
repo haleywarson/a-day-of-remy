@@ -34,14 +34,18 @@
 }
 
 .kitchen img {
-    width: 100%;
+    width: 80%;
 }
 
 .kennel img {
-    width: 100%;
+    width: 70%;
 }
 
 .dog-park img {
+    width: 90%;
+}
+
+.remy-card img {
     width: 100%;
 }
 
@@ -110,6 +114,12 @@ h2, p {
     font-size: 1.25rem;
 }
 
+.dog-park a:hover {
+    font-family: 'Bangers', cursive;
+    color: red;
+    font-size: 1.25rem;
+}
+
 .dog-park p {
     font-family: 'Bangers', cursive;
     color: rgb(8, 186, 240);
@@ -131,7 +141,51 @@ h2, p {
 }
 .remy-card button:hover {
 	cursor: pointer;
-    opacity: .7;
+    color: red;
+}
+
+.kitchen button {
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	background: #fff;
+    width: 100%;
+	box-shadow: 0 3px 20px 0 #0000003b;
+    font-family: 'Bangers', cursive;
+    color: rgb(8, 186, 240);
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+.kitchen button:hover {
+	cursor: pointer;
+    color: red;
+}
+
+.kitchen p {
+	color: green;
+}
+
+.dog-bed button {
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	background: #fff;
+    width: 100%;
+	box-shadow: 0 3px 20px 0 #0000003b;
+    font-family: 'Bangers', cursive;
+    color: rgb(8, 186, 240);
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+.dog-bed button:hover {
+	cursor: pointer;
+    color: red;
+}
+
+.dog-bed p {
+	color: green;
 }
 
 /* || Header and Navigation */
@@ -158,7 +212,7 @@ h2, p {
 }
 
 .nav-links a:hover {
-    opacity: .7;
+    color: red;
 }
 
 /* || Footer */
@@ -192,7 +246,7 @@ footer a {
 }
 
 footer a:hover {
-    opacity: .7;
+    color: #00b4ff;
 }
 
 /* div#footer {
