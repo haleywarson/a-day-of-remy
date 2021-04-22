@@ -47,7 +47,7 @@
     /* box-shadow: 2px 2px 3px rgba(192, 192, 192, 0.21) */
 }
 
-h2, p, button {
+h2, p {
     font-family: 'Bangers', cursive;
     color: rgb(8, 186, 240);
     font-size: 1.25rem;
@@ -62,22 +62,26 @@ button {
 /* || Header and Navigation */
 
 .nav {
-    height: 4em;
+    height: 3.5em;
     box-shadow: 0px 2px 3px gray;
     background-color: white;
     text-decoration: none;
 }
 
-.nav-list {
-}
-
-.nav li {
-    padding: .5rem;
+.nav-links {
+    padding: .7rem;
     display: inline-block;
     font-family: 'Bangers', cursive;
     font-size: 2.3rem;
+}
+
+.nav-links a {
     color:rgb(8, 186, 240);
     text-decoration: none;
+}
+
+.nav-links a:hover {
+    opacity: .7;
 }
 
 /* || Footer */
@@ -92,7 +96,7 @@ footer {
     width: 100%;
 }
 
-footer p, footer a {
+footer p {
     padding: 1rem;
     font-size: 1rem;
     color: white;
@@ -100,6 +104,16 @@ footer p, footer a {
     font-size: 2rem;
     text-decoration: none;
 }
+
+footer a {
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 
 footer a:hover {
     opacity: .7;
@@ -166,6 +180,7 @@ body {
     height: 120px;
     position: relative;
     width: 350px;
+
 }
 
 .cloud:after, .cloud:before {
