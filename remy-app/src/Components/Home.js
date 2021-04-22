@@ -35,7 +35,6 @@ export default class Home extends Component {
   }
 
   feedRemy = (remy) => {
-    // if this.state.kennel.length <== 1, then const new kennel === empty array, else run filter and take out remy that was clicked
     this.setState({
       kitchen: [...this.state.kitchen, remy],
       dogBed: [],
