@@ -12,15 +12,15 @@ export default function App() {
 
     return (
       <Router>
-        <div className="overlay">
-          <ul className="nav">
-            <li>
+        <div className="nav">
+          <ul className="nav-list">
+            <li className="nav-links">
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="nav-links">
               <Link to="/about">About Remy</Link>
             </li>
-            <li>
+            <li className="nav-links">
               <Link to="/friends">Remy's Friends</Link>
             </li>
           </ul>

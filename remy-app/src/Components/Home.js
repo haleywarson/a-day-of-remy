@@ -6,7 +6,7 @@ import "../index.css";
 import MainContainer from "./MainContainer";
 import CloudContainer from './Clouds'
 
-export default class App extends Component {
+export default class Home extends Component {
   state = {
     remys: [],
     kennel: [],
@@ -107,10 +107,11 @@ export default class App extends Component {
   render() {
 
     return (
-      <div className="App">
+      <div className="Home">
         <header>
         </header>
         <main>
+          <CloudContainer />
           <MainContainer
             kennel={this.state.kennel}
             dogBed={this.state.dogBed}

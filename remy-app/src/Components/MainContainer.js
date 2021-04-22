@@ -13,7 +13,6 @@ export default function MainContainer(props) {
     return (
         <div>
             <div className="main-container">
-                <div className="main-container1">
                         <Kitchen
                         kitchen={props.kitchen}
                         remys={props.remys}
@@ -36,8 +35,6 @@ export default function MainContainer(props) {
                         stopClock={props.stopClock}
                         time={props.time}
                         />
-                    </div>
-                    <div className="main-container2">
                         <Kennel
                         kennel={props.kennel}
                         remys={props.remys}
@@ -54,7 +51,6 @@ export default function MainContainer(props) {
                         napRemy={props.napRemy}
                         kennelRemy={props.kennelRemy}
                         />
-                </div>
             <div id="footer">
                 <footer>
                     <p>
