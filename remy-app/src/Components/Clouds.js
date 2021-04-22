@@ -5,7 +5,7 @@ import MainContainer from './MainContainer';
 export default class Clouds extends Component {
     render() {
         return (
-            <div>
+            <div id="cloud-container">
                 <div id="background-wrap">
                     <div class="x1">
                         <div class="cloud"></div>
