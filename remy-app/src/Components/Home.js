@@ -5,6 +5,7 @@ import "../index.css";
 
 import MainContainer from "./MainContainer";
 import CloudContainer from './Clouds'
+import Footer from './Footer'
 
 export default class Home extends Component {
   state = {
@@ -130,6 +131,7 @@ export default class Home extends Component {
             time={this.state.time}
           />
         </main>
+        <Footer />
       </div>
     );
   }
