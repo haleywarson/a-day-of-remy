@@ -49,29 +49,29 @@ export default function MainContainer(props) {
                         kennelRemy={props.kennelRemy}
                     />
                 </div>
+            <div id="footer">
+                <footer>
+                    <p>
+                    Created By:{" "}
+                    <a
+                        href="https://github.com/haleywarson"
+                        target="_blank"
+                        rel="noreferrer"
+                        >
+                        Haley
+                    </a>{" "}
+                    and{" "}
+                    <a
+                        href="https://github.com/Kwayzaar"
+                        target="_blank"
+                        rel="noreferrer"
+                        >
+                        Eric
+                    </a>
+                    </p>
+                </footer>
+                                </div>
             </div>
-                <div className="footer-div">
-                    <footer>
-                        <p>
-                        Created By:{" "}
-                        <a
-                            href="https://github.com/haleywarson"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Haley
-                        </a>{" "}
-                        and{" "}
-                        <a
-                            href="https://github.com/Kwayzaar"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Eric
-                        </a>
-                        </p>
-                    </footer>
-                </div>
         </div>
         
         );

@@ -12,7 +12,7 @@ export default function App() {
 
     return (
       <Router>
-        <div>
+        <div className="overlay">
           <ul className="nav">
             <li>
               <Link to="/">Home</Link>
