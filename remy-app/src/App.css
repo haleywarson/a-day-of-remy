@@ -1,10 +1,6 @@
-
 /* || Main Page */
 
-.main-container, .friend-container, .about {
-}
-
-.main-container {
+.main-container, .friend-container, .about, .friends {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
@@ -41,10 +37,16 @@
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 1rem;
     padding: 1rem;
     box-shadow: 2px 2px 3px rgba(192, 192, 192, 0.21)
+}
+
+h2, p, li, button, a {
+    font-family: 'Bangers', cursive;
+    color: rgb(8, 186, 240);
+    font-size: 1.25rem;
 }
 
 /* || Header and Navigation */
@@ -58,21 +60,32 @@
 .nav li {
     padding: .5rem;
     display: inline-block;
+    font-family: 'Bangers', cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 /* || Footer */
 
 footer {
-    height: 3rem;
+    height: 4rem;
     box-shadow: 0px -2px 3px gray;
     text-align: center;
-    background: grey;
+    background-image: url('https://www.publicdomainpictures.net/pictures/20000/velka/grass-background.jpg');
 }
 
-footer p {
+footer p, footer a {
     padding: 1rem;
     font-size: 1rem;
-    color: black;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: .7;
 }
 
 /* Cloud Animations! */
@@ -80,7 +93,6 @@ footer p {
 body {
     background: #00b4ff;
     color: #333;
-    font: tahoma; 
     height: 100vh;
     margin: 0;
     padding: 0;
