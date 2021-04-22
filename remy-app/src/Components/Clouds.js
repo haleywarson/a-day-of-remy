@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import MainContainer from './MainContainer'
+import MainContainer from './MainContainer';
+
 
 export default class Clouds extends Component {
     render() {

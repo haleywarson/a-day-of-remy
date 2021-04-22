@@ -1,19 +1,30 @@
 import React from 'react'
+
+import "../App.css";
+import "../index.css";
+
 import RemyCard from './RemyCard'
 
-export default function DogBed(props) {
+export default function DogPark(props) {
 
     const renderRemy = () => {
         let remyInDogPark = props.dogPark.length !== 0;
         if(remyInDogPark) {
-            return <RemyCard
-                        dogPark={props.dogPark}
-                        remys={props.remys}
-                        napRemy={props.napRemy} 
-                        parkRemy={props.parkRemy}
-                        feedRemy={props.feedRemy}
-                        kennelRemy={props.kennelRemy}
-                    />;
+            return (
+                <>
+                    <RemyCard
+                    dogPark={props.dogPark}
+                    remys={props.remys}
+                    napRemy={props.napRemy}
+                    parkRemy={props.parkRemy}
+                    feedRemy={props.feedRemy}
+                    kennelRemy={props.kennelRemy}
+                    />
+                    <p>
+                    Meet my <a href="/friends">dog friends</a>
+                    </p>
+                </>
+                );
             }
         };
 
