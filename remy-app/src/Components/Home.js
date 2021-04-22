@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "../App.css";
 import "../index.css";
 
-// import MainContainer from "./MainContainer";
+import MainContainer from "./MainContainer";
 import CloudContainer from './Clouds'
 
 export default class App extends Component {
@@ -54,7 +54,7 @@ export default class App extends Component {
 
   kennelRemy = (remy) => {
     this.setState({
-      kennel: [...this.state.kennel, remy],
+      kennel: [remy],
       kitchen: [],
       dogBed: [],
       dogPark: [],
@@ -105,23 +105,51 @@ export default class App extends Component {
   };
 
   render() {
-        return (
-          <div className="App">
-            <header></header>
-            <main>
-              <CloudContainer
-                kennel={this.state.kennel}
-                dogBed={this.state.dogBed}
-                kitchen={this.state.kitchen}
-                dogPark={this.state.dogPark}
-                remys={this.state.remys}
-                feedRemy={this.feedRemy}
-                napRemy={this.napRemy}
-                kennelRemy={this.kennelRemy}
-                parkRemy={this.parkRemy}
-              />
-            </main>
-          </div>
-        );
+
+    return (
+      <div className="App">
+        <header>
+        </header>
+        <main>
+          <MainContainer
+            kennel={this.state.kennel}
+            dogBed={this.state.dogBed}
+            kitchen={this.state.kitchen}
+            dogPark={this.state.dogPark}
+            remys={this.state.remys}
+            feedRemy={this.feedRemy}
+            napRemy={this.napRemy}
+            kennelRemy={this.kennelRemy}
+            parkRemy={this.parkRemy}
+            giveTreats={this.giveTreats}
+            treatCount={this.state.treatCount}
+            imFullAlert={this.imFullAlert}
+            startClock={this.startClock}
+            stopClock={this.stopClock}
+            time={this.state.time}
+          />
+        </main>
+        <footer>
+          <p>
+            Created By:
+            <a
+              href="https://github.com/haleywarson"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Haley
+            </a>
+            &
+            <a
+              href="https://github.com/Kwayzaar"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Eric
+            </a>
+          </p>
+        </footer>
+      </div>
+    );
   }
 }  

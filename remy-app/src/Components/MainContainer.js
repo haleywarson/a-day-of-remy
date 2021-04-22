@@ -14,40 +14,46 @@ export default function MainContainer(props) {
         <div>
             <div className="main-container">
                 <div className="main-container1">
-                    <Kitchen
+                        <Kitchen
                         kitchen={props.kitchen}
                         remys={props.remys}
                         feedRemy={props.feedRemy}
                         napRemy={props.napRemy}
                         kennelRemy={props.kennelRemy}
                         parkRemy={props.parkRemy}
-                    />
-                    <DogBed
+                        giveTreats={props.giveTreats}
+                        treatCount={props.treatCount}
+                        imFullAlert={props.imFullAlert}
+                        />
+                        <DogBed
                         dogBed={props.dogBed}
                         remys={props.remys}
                         feedRemy={props.feedRemy}
                         napRemy={props.napRemy}
                         kennelRemy={props.kennelRemy}
                         parkRemy={props.parkRemy}
-                    />
-                </div>
-                <div className="main-container2">
-                    <Kennel
+                        startClock={props.startClock}
+                        stopClock={props.stopClock}
+                        time={props.time}
+                        />
+                    </div>
+                    <div className="main-container2">
+                        <Kennel
                         kennel={props.kennel}
                         remys={props.remys}
                         feedRemy={props.feedRemy}
                         napRemy={props.napRemy}
                         kennelRemy={props.kennelRemy}
                         parkRemy={props.parkRemy}
-                    />
-                    <DogPark
+                        />
+                        <DogPark
                         dogPark={props.dogPark}
                         remys={props.remys}
                         parkRemy={props.parkRemy}
                         feedRemy={props.feedRemy}
                         napRemy={props.napRemy}
                         kennelRemy={props.kennelRemy}
-                    />
+                        />
                 </div>
             <div id="footer">
                 <footer>
@@ -70,9 +76,8 @@ export default function MainContainer(props) {
                     </a>
                     </p>
                 </footer>
-                                </div>
+            </div>
             </div>
         </div>
-        
-        );
+    );
 }
