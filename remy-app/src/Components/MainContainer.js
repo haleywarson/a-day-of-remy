@@ -11,9 +11,9 @@ import DogPark from './DogPark'
 export default function MainContainer(props) {
 
     return (
-        <div>
+        <div className="main-content">
             <div className="main-container">
-                <div className="main-container1">
+                
                         <Kitchen
                         kitchen={props.kitchen}
                         remys={props.remys}
@@ -36,8 +36,6 @@ export default function MainContainer(props) {
                         stopClock={props.stopClock}
                         time={props.time}
                         />
-                    </div>
-                    <div className="main-container2">
                         <Kennel
                         kennel={props.kennel}
                         remys={props.remys}
@@ -52,9 +50,8 @@ export default function MainContainer(props) {
                         parkRemy={props.parkRemy}
                         feedRemy={props.feedRemy}
                         napRemy={props.napRemy}
-                        kennelRemy={props.kennelRemy}
-                        />
-                </div>
+                        kennelRemy={props.kennelRemy} />
+                    </div>
             <div id="footer">
                 <footer>
                     <p>
@@ -76,7 +73,7 @@ export default function MainContainer(props) {
                     </a>
                     </p>
                 </footer>
-                </div>
+                
             </div>
         </div>
     );
