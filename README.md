@@ -24,7 +24,7 @@ A day in the life of Remy... here's your chance to take care of Remy for a day!
 
 ## Demo
 
-[demo](https://media.giphy.com/media/JlYP1t2QXFjAKbfHoB/giphy.gif)
+![Demo](https://media.giphy.com/media/JlYP1t2QXFjAKbfHoB/giphy.gif)
 
 ## Technologies
 
