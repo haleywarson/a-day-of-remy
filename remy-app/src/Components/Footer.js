@@ -2,27 +2,25 @@ import React from 'react'
 
 export default function Footer() {
     return (
-   
         <footer>
-          <p>
+            <p>
             Created By:
             <a
-              href="https://github.com/haleywarson"
-              target="_blank"
-              rel="noreferrer"
+                href="https://github.com/haleywarson"
+                target="_blank"
+                rel="noreferrer"
             >
-              Haley
+                Haley
             </a>
             &
             <a
-              href="https://github.com/Kwayzaar"
-              target="_blank"
-              rel="noreferrer"
+                href="https://github.com/Kwayzaar"
+                target="_blank"
+                rel="noreferrer"
             >
-              Eric
+                Eric
             </a>
-          </p>
+            </p>
         </footer>
-    
     );
 }

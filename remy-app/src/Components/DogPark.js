@@ -13,28 +13,28 @@ export default function DogPark(props) {
             return (
                 <>
                     <RemyCard
-                    dogPark={props.dogPark}
-                    remys={props.remys}
-                    napRemy={props.napRemy}
-                    parkRemy={props.parkRemy}
-                    feedRemy={props.feedRemy}
-                    kennelRemy={props.kennelRemy}
+                        dogPark={props.dogPark}
+                        remys={props.remys}
+                        napRemy={props.napRemy}
+                        parkRemy={props.parkRemy}
+                        feedRemy={props.feedRemy}
+                        kennelRemy={props.kennelRemy}
                     />
                     <p>
                     Meet my <a href="/friends">dog friends</a>
                     </p>
                 </>
-                );
-            }
-        };
+            );
+        }
+    };
 
     return (
-      <div className="dog-park">
-        <img
-          alt="Dog Park"
-          src="https://image.freepik.com/free-vector/boy-playing-fetch-his-dog-while-using-medical-mask_209620-71.jpg"
-        />
-        {renderRemy()}
-      </div>
+        <div className="dog-park">
+            <img
+                alt="Dog Park"
+                src="https://image.freepik.com/free-vector/boy-playing-fetch-his-dog-while-using-medical-mask_209620-71.jpg"
+            />
+            {renderRemy()}
+        </div>
     );
 }

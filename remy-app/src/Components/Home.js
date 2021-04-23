@@ -71,14 +71,17 @@ export default class Home extends Component {
   };
 
   giveTreats = () => {
+    const newTreatCount = this.state.treatCount + 1;
     this.setState({
-      treatCount: this.state.treatCount + 1,
+      treatCount: newTreatCount
     });
+    this.imFullAlert(newTreatCount)
   };
 
   imFullAlert = () => {
     if (this.state.treatCount === 5) {
       alert("I'm full!");
+      // console.log("treats", this.state.treatCount)
     }
   };
 
