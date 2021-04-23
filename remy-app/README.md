@@ -2,19 +2,19 @@
 
 ## Table of Contents
 
-![-][General Info](#general-info)
+[General Info](#general-info)
 
-![-][Technologies](#technologies)
+[Technologies](#technologies)
 
-![-][Setup](#setup)
+[Setup](#setup)
 
-![-][Features](#features)
+[Features](#features)
 
-![-][Code Example](#code-example)
+[Code Example](#code-example)
 
-![-][Inspiration](#inspiration)
+[Inspiration](#inspiration)
 
-![-][Contact](#contact)
+[Contact](#contact)
 
 ## General Info
 
@@ -48,12 +48,12 @@ const renderRemy = () => {
             return (
                 <>
                     <RemyCard
-                    dogBed={props.dogBed}
-                    remys={props.remys}
-                    napRemy={props.napRemy}
-                    parkRemy={props.parkRemy}
-                    feedRemy={props.feedRemy}
-                    kennelRemy={props.kennelRemy}
+                      dogBed={props.dogBed}
+                      remys={props.remys}
+                      napRemy={props.napRemy}
+                      parkRemy={props.parkRemy}
+                      feedRemy={props.feedRemy}
+                      kennelRemy={props.kennelRemy}
                     />
                     <button onClick={() => props.startClock()}>Goodnight!</button>
                     <p>{props.time}</p>
