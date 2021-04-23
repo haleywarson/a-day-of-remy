@@ -48,12 +48,12 @@ const renderRemy = () => {
             return (
                 <>
                     <RemyCard
-                    dogBed={props.dogBed}
-                    remys={props.remys}
-                    napRemy={props.napRemy}
-                    parkRemy={props.parkRemy}
-                    feedRemy={props.feedRemy}
-                    kennelRemy={props.kennelRemy}
+                      dogBed={props.dogBed}
+                      remys={props.remys}
+                      napRemy={props.napRemy}
+                      parkRemy={props.parkRemy}
+                      feedRemy={props.feedRemy}
+                      kennelRemy={props.kennelRemy}
                     />
                     <button onClick={() => props.startClock()}>Goodnight!</button>
                     <p>{props.time}</p>
