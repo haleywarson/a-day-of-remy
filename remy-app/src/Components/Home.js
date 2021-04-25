@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 
 import "../App.css";
 import "../index.css";
@@ -7,133 +7,116 @@ import MainContainer from "./MainContainer";
 import CloudContainer from './Clouds'
 import Footer from './Footer'
 
-export default class Home extends Component {
-  state = {
-    remys: [],
-    kennel: [],
-    dogBed: [],
-    kitchen: [],
-    dogPark: [],
-    treatCount: 0,
-    time: 0,
-    clockId: null,
-  };
+const remyUrl = "http://localhost:3000/remys"
 
-  componentDidMount() {
-    fetch("http://localhost:3000/remys")
+export default function Home() {
+
+  const [remys, setRemys] = useState([]);
+  const [kennel, setKennel] = useState([]);
+  const [dogBed, setDogBed] = useState([]);
+  const [kitchen, setKitchen] = useState([]);
+  const [dogPark, setDogPark] = useState([]);
+  const [treatCount, setTreatCount] = useState(0);
+  const [time, setTime] = useState(0);
+  const [clockId, setClockId] = useState(null);
+
+  useEffect(() => {
+    fetch(remyUrl)
       .then((response) => response.json())
-      .then((remys) =>
-        this.setState({
-          remys: remys[0],
-          kennel: remys[0],
-        })
+      .then((remys) => {
+        setRemys(remys[0])
+        setKennel(remys[0])
+        }
       );
+    return () => {stopClock()};
+  }, [])
+
+  // Functions to move Remy to locations
+  const feedRemy = (remy) => {
+    setKitchen([remy])
+    setDogBed([])
+    setKennel([])
+    setDogPark([])
+  };
+
+  const napRemy = (remy) => {
+    setDogBed([remy])
+    setKennel([])
+    setDogPark([])
+    setKitchen([])
+  };
+
+  const kennelRemy = (remy) => {
+    setKennel([remy])
+    setDogPark([])
+    setKitchen([])
+    setDogBed([])
+  };
+
+  const parkRemy = (remy) => {
+    setKennel([])
+    setDogPark([remy])
+    setKitchen([])
+    setDogBed([])
+  };
+
+  // Functions within locations to add treats, alert, manage clock
+  const giveTreats = () => {
+    const newTreatCount = treatCount + 1;
+    setTreatCount(newTreatCount)
+    imFullAlert(newTreatCount)
   }
 
-  componentWillUnmount() {
-    this.stopClock();
-  }
-
-  feedRemy = (remy) => {
-    this.setState({
-      kitchen: [...this.state.kitchen, remy],
-      dogBed: [],
-      kennel: [],
-      dogPark: [],
-    });
-  };
-
-  napRemy = (remy) => {
-    this.setState({
-      dogBed: [...this.state.dogBed, remy],
-      kitchen: [],
-      kennel: [],
-      dogPark: [],
-    });
-  };
-
-  kennelRemy = (remy) => {
-    this.setState({
-      kennel: [remy],
-      kitchen: [],
-      dogBed: [],
-      dogPark: [],
-    });
-  };
-
-  parkRemy = (remy) => {
-    this.setState({
-      dogPark: [...this.state.dogPark, remy],
-      kitchen: [],
-      dogBed: [],
-      kennel: [],
-    });
-  };
-
-  giveTreats = () => {
-    const newTreatCount = this.state.treatCount + 1;
-    this.setState({
-      treatCount: newTreatCount
-    });
-    this.imFullAlert(newTreatCount)
-  };
-
-  imFullAlert = () => {
-    if (this.state.treatCount === 5) {
+  const imFullAlert = () => {
+    if(treatCount === 5) {
       alert("I'm full!");
-      // console.log("treats", this.state.treatCount)
     }
   };
 
-  startClock = () => {
+  const startClock = () => {
     const clockId = setInterval(() => {
-      this.setState({ time: this.state.time + 1 });
-    }, 1000);
-    this.setState({
-      clockId,
-    });
-  };
+      setTime(time + 1)}, 1000);
+      setClockId(clockId)
+  }
 
-  resetTime = () => {
-    this.setState({
-      time: 0,
-    });
+  const resetTime = () => {
+    setTime(0)
   };
   
-  stopClock = () => {
-    if (this.state.clockId) {
-      clearInterval(this.state.clockId);
-      this.resetTime();
-    }
-  };
-
-  render() {
-    return (
-      <div className="Home">
-        <header>
-        </header>
-        <main>
-          <CloudContainer />
-          <MainContainer
-            kennel={this.state.kennel}
-            dogBed={this.state.dogBed}
-            kitchen={this.state.kitchen}
-            dogPark={this.state.dogPark}
-            remys={this.state.remys}
-            feedRemy={this.feedRemy}
-            napRemy={this.napRemy}
-            kennelRemy={this.kennelRemy}
-            parkRemy={this.parkRemy}
-            giveTreats={this.giveTreats}
-            treatCount={this.state.treatCount}
-            imFullAlert={this.imFullAlert}
-            startClock={this.startClock}
-            stopClock={this.stopClock}
-            time={this.state.time}
-          />
-        </main>
-        <Footer />
-      </div>
-    );
+  const stopClock = () => {
+    if(clockId) {
+      clearInterval(clockId);
+      resetTime();
+    };
   }
+
+  return (
+    <div className="Home">
+      <header>
+      </header>
+      <main>
+        <CloudContainer />
+        <MainContainer
+          kennel={kennel}
+          dogBed={dogBed}
+          kitchen={kitchen}
+          dogPark={dogPark}
+          remys={remys}
+          feedRemy={feedRemy}
+          napRemy={napRemy}
+          kennelRemy={kennelRemy}
+          parkRemy={parkRemy}
+          giveTreats={giveTreats}
+          treatCount={treatCount}
+          imFullAlert={imFullAlert}
+          startClock={startClock}
+          stopClock={stopClock}
+          time={time}
+        />
+      </main>
+      <Footer />
+    </div>
+  );
+
 }  
+
